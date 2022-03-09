@@ -7,7 +7,7 @@ const getData = async () => {
   let amazonData = [];
   try {
     const response = await axios.get(
-      `https://www.amazon.in/s?k=mobile&crid=2D2EXHAEKZBOE&sprefix=%2Caps%2C306&ref=nb_sb_ss_recent_1_0_recent`
+      `https://www.amazon.in/s?k=mobile&crid=I3UL405S1F5M&sprefix=mobil%2Caps%2C307&ref=nb_sb_ss_ts-doa-p_2_5`
     );
     const $ = cheerio.load(response.data);
 
@@ -33,7 +33,7 @@ const getData = async () => {
   let flipKartData = [];
   try {
     const response = await axios.get(
-      `https://www.flipkart.com/search?q=mobiles&sid=tyy%2C4io&as=on&as-show=on&otracker=AS_QueryStore_OrganicAutoSuggest_1_5_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_5_na_na_na&as-pos=1&as-type=HISTORY&suggestionId=mobiles%7CMobiles&requestId=be7e2d79-51ff-4a1f-ba14-d8af4fd615b3`
+      `https://www.flipkart.com/search?q=laptop&sid=6bo%2Cb5g&as=on&as-show=on&otracker=AS_QueryStore_OrganicAutoSuggest_1_3_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_3_na_na_na&as-pos=1&as-type=RECENT&suggestionId=laptop%7CLaptops&requestId=8657cac5-bf73-4264-8c4c-2a6eed0f62d0&as-searchtext=lap`
     );
     const $ = cheerio.load(response.data);
     let count = 0;
